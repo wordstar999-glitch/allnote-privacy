@@ -48,9 +48,9 @@ ul{margin:6px 0;padding-left:20px}
 <div class="c"><h3>2. 이용자 권리 보호</h3><div class="b">저장된 개인정보를 올노트에서 직접 확인한 후 고치거나 삭제할 수 있어요.
 <ul><li>개인정보 문의 담당: 개발자</li><li>이메일: wordstar801@gmail.com</li></ul></div></div>
 <div class="c"><h3>3. 개인정보 이용 목적</h3><div class="b">올노트는 개인정보를 수집하기 전에 미리 알려드리고, 이용자가 허락한 목적으로만 이용해요.
-<ul><li>노트·할일·일정·기념일 관리</li><li>Google 드라이브 백업·복원</li><li>PIN·생체인증 잠금</li><li>무료 체험·구매 상태 확인</li></ul></div></div>
+<ul><li>노트·할일·일정·기념일 관리</li><li>Google 드라이브 백업·복원</li><li>PIN 잠금</li><li>무료 체험·구매 상태 확인</li></ul></div></div>
 <div class="c"><h3>4. 개인정보 수집</h3><div class="b">올노트는 꼭 필요한 최소한의 개인정보만 처리해요.
-<ul><li>노트·할일·일정·기념일 내용(기기 내 저장)</li><li>PIN, 생체인증(지문/얼굴 — 기기 OS가 처리)</li><li>Google 계정 기본 프로필(이메일, 이름)</li><li>무료 체험 시작일·구매 여부</li></ul></div></div>
+<ul><li>노트·할일·일정·기념일 내용(기기 내 저장)</li><li>PIN(기기 내 저장)</li><li>Google 계정 기본 프로필(이메일, 이름)</li><li>무료 체험 시작일·구매 여부</li></ul></div></div>
 <div class="c"><h3>5. 개인정보 제공</h3><div class="b">올노트는 개인정보를 다른 기관에 제공하지 않아요. 개발자 서버로 전송하지도 않아요.
 <ul><li>광고 SDK, 분석·크래시 SDK를 사용하지 않아요.</li></ul></div></div>
 <div class="c"><h3>6. 개인정보 보유·이용기간 및 파기</h3><div class="b">보유기간이 지나거나 이용자가 삭제하면 복구할 수 없는 방법으로 파기해요.
@@ -84,7 +84,7 @@ ul{margin:6px 0;padding-left:20px}
 <tr><th>처리 목적</th><th>내용</th></tr>
 <tr><td>핵심 기능 제공</td><td>노트, 할일, 일정, 기념일 관리(기기 내 저장)</td></tr>
 <tr><td>백업 및 복원</td><td>Google 드라이브를 통한 자동 백업·복원(앱 실행 시, 노트·할일·일정·기념일 변경 시 자동 백업)</td></tr>
-<tr><td>잠금 기능</td><td>PIN 또는 생체인증을 통한 앱 접근 제한</td></tr>
+<tr><td>잠금 기능</td><td>PIN을 통한 앱 접근 제한</td></tr>
 <tr><td>이용 상태 확인</td><td>무료 체험 기간 및 구매(잠금 해제) 상태의 확인·유지(기기 변경 시 포함)</td></tr>
 </table></div>
 
@@ -92,7 +92,7 @@ ul{margin:6px 0;padding-left:20px}
 <div class="tw"><table>
 <tr><th>구분</th><th>항목</th><th>수집 방법</th><th>저장 위치</th><th>개발자 전송</th></tr>
 <tr><td>콘텐츠</td><td>노트·할일·일정·기념일 내용(제목, 본문, 날짜, 첨부파일 등)</td><td>이용자 직접 입력</td><td>이용자 기기 내부, 백업 시 이용자 본인 Google 드라이브(drive.file)</td><td>없음</td></tr>
-<tr><td>잠금 정보</td><td>PIN, 생체인증 정보(지문/얼굴 — 기기 OS가 처리, 앱은 인증 성공 여부만 전달받음)</td><td>이용자 직접 설정</td><td>기기 내 보안 저장소(암호화) / 생체정보는 기기 자체 보안 영역</td><td>없음</td></tr>
+<tr><td>잠금 정보</td><td>PIN(5회 연속 오류 시 잠김, Google 재로그인으로만 재설정 가능)</td><td>이용자 직접 설정</td><td>기기 내 보안 저장소(암호화)</td><td>없음</td></tr>
 <tr><td>계정 정보(필수)</td><td>Google 계정의 기본 프로필(이메일 주소, 이름)</td><td>Google 로그인</td><td>이용자 기기</td><td>없음</td></tr>
 <tr><td>이용 상태</td><td>무료 체험 시작일, 구매(잠금 해제) 여부</td><td>앱 자동 생성</td><td>이용자 Google 계정의 비공개 앱데이터 폴더(drive.appdata)</td><td>없음</td></tr>
 <tr><td>결제</td><td>결제 정보</td><td>Google Play 인앱 결제</td><td>Google Play가 처리</td><td>앱은 카드 정보 등을 수집하지 않음</td></tr>
@@ -102,7 +102,6 @@ ul{margin:6px 0;padding-left:20px}
 <tr><th>권한</th><th>사용 목적</th><th>필수 여부</th></tr>
 <tr><td>카메라, 사진(갤러리)</td><td>노트 이미지 첨부</td><td>선택(동의 거부 시 해당 기능만 제한)</td></tr>
 <tr><td>마이크</td><td>음성으로 카테고리 이름 입력. 기기 OS(Android/iOS)의 음성 인식 기능을 사용하며, 기기·설정에 따라 음성 데이터가 OS 제공자(Google/Apple) 서버로 전송되어 처리될 수 있습니다.</td><td>선택</td></tr>
-<tr><td>생체인증(지문/얼굴)</td><td>앱 잠금 해제</td><td>선택</td></tr>
 <tr><td>알림</td><td>일정·기념일 알림 표시</td><td>선택</td></tr>
 <tr><td>정확한 알람 예약</td><td>설정한 시각에 정확히 알림 제공</td><td>선택</td></tr>
 <tr><td>인터넷</td><td>Google 드라이브 백업·복원, 인앱 결제 통신</td><td>필수(앱 핵심 기능)</td></tr>
@@ -142,7 +141,7 @@ ul{margin:6px 0;padding-left:20px}
 <div class="tw"><table>
 <tr><th>구분</th><th>조치 내용</th></tr>
 <tr><td>관리적 조치</td><td>개발자가 이용자 데이터를 수집하는 서버를 운영하지 않는 구조 유지, 필요 최소한의 Google 접근 권한(drive.file, drive.appdata)만 사용</td></tr>
-<tr><td>기술적 조치</td><td>PIN을 기기 내 보안 저장소에 암호화하여 저장, 생체인증은 기기 OS 보안 영역에서 처리, Google 인증(OAuth)을 통한 계정 접근</td></tr>
+<tr><td>기술적 조치</td><td>PIN을 기기 내 보안 저장소에 암호화하여 저장, PIN 5회 연속 오류 시 잠금 처리(Google 재로그인으로만 재설정), Google 인증(OAuth)을 통한 계정 접근</td></tr>
 <tr><td>물리적 조치</td><td>개발자 서버·저장매체에 이용자 개인정보를 보관하지 않음</td></tr>
 </table></div>
 
