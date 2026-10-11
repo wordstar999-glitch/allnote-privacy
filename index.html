@@ -1,55 +1,160 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>올노트(AllNote) 개인정보처리방침</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>올노트 개인정보 처리방침</title>
 <style>
-  body { font-family: -apple-system, "Pretendard", "Malgun Gothic", sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; line-height: 1.7; color: #1c2430; }
-  h1 { font-size: 24px; }
-  h2 { font-size: 18px; margin-top: 32px; border-bottom: 1px solid #ddd; padding-bottom: 6px; }
-  .updated { color: #6b7480; font-size: 14px; margin-bottom: 24px; }
-  ul { padding-left: 20px; }
-  li { margin-bottom: 6px; }
+:root{--bg:#fff;--fg:#1d2329;--mut:#59626b;--line:#d5dae0;--head:#eef2f7;--acc:#1f4e8c}
+@media(prefers-color-scheme:dark){:root{--bg:#14181d;--fg:#e6e9ec;--mut:#a3acb5;--line:#323a43;--head:#1e252d;--acc:#8db6ee}}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.7 -apple-system,"Noto Sans KR","Malgun Gothic",sans-serif}
+main{max-width:860px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:26px;margin:8px 0 4px;color:var(--acc)}
+h2{font-size:18px;margin:36px 0 10px;padding-top:10px;border-top:2px solid var(--acc)}
+p{margin:8px 0}
+.meta{color:var(--mut);font-size:13px}
+nav{background:var(--head);border:1px solid var(--line);border-radius:6px;padding:12px 18px;margin:18px 0}
+nav ol{margin:0;padding-left:20px;columns:2;column-gap:28px}
+nav a{color:var(--acc);text-decoration:none}
+table{width:100%;border-collapse:collapse;margin:10px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--head);white-space:nowrap}
+.tw{overflow-x:auto}
+ul{margin:6px 0;padding-left:20px}
+@media(max-width:560px){nav ol{columns:1}}
 </style>
 </head>
 <body>
-  <h1>올노트(AllNote) 개인정보처리방침</h1>
-  <p class="updated">최종 수정일: 2026-10-11</p>
+<main>
+<h1>개인정보 처리방침</h1>
+<p class="meta">시행일: 2026. 10. 11. · 버전 1.0</p>
+<p>올노트(이하 "앱")는 「개인정보 보호법」 제30조에 따라 이용자의 개인정보를 보호하고 관련 고충을 신속히 처리하기 위하여 다음과 같이 개인정보 처리방침을 수립·공개합니다. 앱은 서비스 제공에 필요한 최소한의 개인정보만 처리합니다.</p>
 
-  <p>올노트(이하 "앱")는 사용자의 개인정보를 중요하게 생각합니다.<br>다음과 같이 개인정보를 처리합니다.</p>
+<nav><strong>목차</strong>
+<ol>
+<li><a href="#s1">개인정보의 처리 목적</a></li>
+<li><a href="#s2">처리하는 개인정보의 항목</a></li>
+<li><a href="#s3">만 14세 미만 아동의 개인정보 처리</a></li>
+<li><a href="#s4">개인정보의 처리 및 보유 기간</a></li>
+<li><a href="#s5">개인정보의 파기 절차 및 방법</a></li>
+<li><a href="#s6">개인정보의 제3자 제공</a></li>
+<li><a href="#s7">개인정보 처리업무의 위탁</a></li>
+<li><a href="#s8">개인정보의 국외 수집 및 이전</a></li>
+<li><a href="#s9">개인정보의 안전성 확보조치</a></li>
+<li><a href="#s10">자동 수집 장치 및 행태정보</a></li>
+<li><a href="#s11">민감정보의 공개 가능성</a></li>
+<li><a href="#s12">정보주체의 권리·의무 및 행사방법</a></li>
+<li><a href="#s13">개인정보 보호책임자 및 고충처리</a></li>
+<li><a href="#s14">권익침해 구제방법</a></li>
+<li><a href="#s15">개인정보 처리방침의 변경</a></li>
+</ol></nav>
 
-  <h2>1. 수집하는 정보</h2>
-  <ul>
-    <li>노트, 할일, 일정, 기념일 내용(제목, 본문, 날짜, 첨부파일 등): 사용자가 직접 입력하며, 기기 내부에 저장됩니다.</li>
-    <li>잠금 비밀번호(PIN): 기기 내 보안 저장소에 암호화되어 저장되며, 외부로 전송되지 않습니다.</li>
-    <li>Google 계정(필수): 앱을 사용하려면 Google 계정 로그인이 반드시 필요합니다.<br>이 앱이 만든 백업 파일에만 접근하며(drive.file 범위), 드라이브의 다른 파일에는 접근하지 않습니다.</li>
-    <li>무료 체험 시작일·구매(잠금 해제) 여부: 기기를 바꿔도 체험·구매 상태를 유지할 수 있도록, 사용자의 Google 계정에 연결된 비공개 저장 공간(앱데이터 폴더, drive.appdata 범위)에 저장됩니다.<br>이 공간은 Google Drive 화면에는 보이지 않으며, 이 앱 외의 다른 앱이나 사용자가 직접 접근할 수 없습니다.</li>
-    <li>인앱 구매 시 결제 정보는 Google Play가 처리하며, 이 앱은 카드 정보 등을 직접 수집하지 않습니다.</li>
-  </ul>
+<h2 id="s1">1. 개인정보의 처리 목적</h2>
+<div class="tw"><table>
+<tr><th>처리 목적</th><th>내용</th></tr>
+<tr><td>핵심 기능 제공</td><td>노트, 할일, 일정, 기념일 관리(기기 내 저장)</td></tr>
+<tr><td>백업 및 복원</td><td>Google 드라이브를 통한 자동 백업·복원(앱 실행 시, 노트·할일·일정·기념일 변경 시 자동 백업)</td></tr>
+<tr><td>잠금 기능</td><td>PIN 또는 생체인증을 통한 앱 접근 제한</td></tr>
+<tr><td>이용 상태 확인</td><td>무료 체험 기간 및 구매(잠금 해제) 상태의 확인·유지(기기 변경 시 포함)</td></tr>
+</table></div>
 
-  <h2>2. 이용 목적</h2>
-  <ul>
-    <li>노트/할일/일정 관리 핵심 기능 제공(기기 내 저장)</li>
-    <li>구글 드라이브를 통한 자동 백업/복원(앱 실행 시, 그리고 노트·할일·일정·기념일 변경 시 자동으로 백업됩니다)</li>
-    <li>잠금 기능을 통한 개인정보 보호</li>
-    <li>무료 체험 기간 및 구매(잠금 해제) 상태 확인·유지</li>
-  </ul>
+<h2 id="s2">2. 처리하는 개인정보의 항목</h2>
+<div class="tw"><table>
+<tr><th>구분</th><th>항목</th><th>수집 방법</th><th>저장 위치</th><th>개발자 전송</th></tr>
+<tr><td>콘텐츠</td><td>노트·할일·일정·기념일 내용(제목, 본문, 날짜, 첨부파일 등)</td><td>이용자 직접 입력</td><td>이용자 기기 내부, 백업 시 이용자 본인 Google 드라이브(drive.file)</td><td>없음</td></tr>
+<tr><td>잠금 정보</td><td>PIN, 생체인증 정보(지문/얼굴 — 기기 OS가 처리, 앱은 인증 성공 여부만 전달받음)</td><td>이용자 직접 설정</td><td>기기 내 보안 저장소(암호화) / 생체정보는 기기 자체 보안 영역</td><td>없음</td></tr>
+<tr><td>계정 정보(필수)</td><td>Google 계정의 기본 프로필(이메일 주소, 이름)</td><td>Google 로그인</td><td>이용자 기기</td><td>없음</td></tr>
+<tr><td>이용 상태</td><td>무료 체험 시작일, 구매(잠금 해제) 여부</td><td>앱 자동 생성</td><td>이용자 Google 계정의 비공개 앱데이터 폴더(drive.appdata)</td><td>없음</td></tr>
+<tr><td>결제</td><td>결제 정보</td><td>Google Play 인앱 결제</td><td>Google Play가 처리</td><td>앱은 카드 정보 등을 수집하지 않음</td></tr>
+</table></div>
+<p><strong>앱 권한 사용 내역</strong></p>
+<div class="tw"><table>
+<tr><th>권한</th><th>사용 목적</th><th>필수 여부</th></tr>
+<tr><td>카메라, 사진(갤러리)</td><td>노트 이미지 첨부</td><td>선택(동의 거부 시 해당 기능만 제한)</td></tr>
+<tr><td>마이크</td><td>음성으로 카테고리 이름 입력. 기기 OS(Android/iOS)의 음성 인식 기능을 사용하며, 기기·설정에 따라 음성 데이터가 OS 제공자(Google/Apple) 서버로 전송되어 처리될 수 있습니다.</td><td>선택</td></tr>
+<tr><td>생체인증(지문/얼굴)</td><td>앱 잠금 해제</td><td>선택</td></tr>
+<tr><td>알림</td><td>일정·기념일 알림 표시</td><td>선택</td></tr>
+<tr><td>정확한 알람 예약</td><td>설정한 시각에 정확히 알림 제공</td><td>선택</td></tr>
+<tr><td>인터넷</td><td>Google 드라이브 백업·복원, 인앱 결제 통신</td><td>필수(앱 핵심 기능)</td></tr>
+</table></div>
+<p>선택 권한을 허용하지 않아도 해당 기능 외의 앱 이용은 가능합니다. 앱은 Google API 서비스에서 받은 정보의 사용 및 다른 앱으로의 전송 시 제한적 사용 요건을 포함한 Google API 서비스 사용자 데이터 정책(Google API Services User Data Policy)을 준수합니다.</p>
+<p>앱은 개발자가 운영하는 서버를 두지 않으며, 위 정보를 개발자에게 전송하거나 개발자가 열람하지 않습니다.</p>
 
-  <h2>3. 보유 기간</h2>
-  <ul>
-    <li>기기 내 데이터: 사용자가 앱 내에서 삭제하거나 앱을 삭제할 때까지 보관됩니다.</li>
-    <li>구글 드라이브 백업 파일: 사용자가 직접 삭제하거나 드라이브 연결을 해제할 때까지 보관됩니다.<br>개발자는 이 파일에 접근할 수 없습니다.</li>
-    <li>체험·구매 기록(앱데이터 폴더): 사용자가 Google 계정의 앱 연결을 해제할 때까지 보관됩니다.<br>개발자는 이 기록에 접근할 수 없습니다.</li>
-  </ul>
+<h2 id="s3">3. 만 14세 미만 아동의 개인정보 처리</h2>
+<p>앱은 만 14세 미만 아동을 대상으로 하지 않으며, 만 14세 미만 아동의 개인정보를 수집하지 않습니다. Google Play 등록 기준 이 앱의 이용 대상 연령은 만 18세 이상입니다.</p>
 
-  <h2>4. 제3자 제공</h2>
-  <p>이 앱은 수집한 정보를 제3자에게 제공하지 않습니다.<br>구글 드라이브에 저장되는 모든 정보는 사용자 본인의 Google 계정에만 저장되며, 개발자를 포함한 어떠한 제3자도 접근할 수 없습니다.<br>이 앱은 광고 SDK를 사용하지 않습니다.</p>
+<h2 id="s4">4. 개인정보의 처리 및 보유 기간</h2>
+<div class="tw"><table>
+<tr><th>구분</th><th>보유 기간</th><th>비고</th></tr>
+<tr><td>기기 내 데이터</td><td>이용자가 앱에서 삭제하거나 앱을 삭제할 때까지</td><td>앱 삭제 시 기기 내 데이터 함께 삭제</td></tr>
+<tr><td>Google 드라이브 백업 파일</td><td>이용자가 삭제하거나 드라이브 연결을 해제할 때까지</td><td>개발자는 해당 파일을 수집·열람하지 않음</td></tr>
+<tr><td>체험·구매 기록(앱데이터 폴더)</td><td>이용자가 Google 계정에서 앱 연결을 해제할 때까지</td><td>개발자는 해당 기록을 수집·열람하지 않음</td></tr>
+</table></div>
 
-  <h2>5. 사용자 권리</h2>
-  <p>사용자는 언제든지 앱 내에서 노트/할일/일정을 삭제할 수 있으며, 앱을 삭제하면 기기에 저장된 모든 데이터가 함께 삭제됩니다.<br>구글 드라이브 백업 파일 삭제는 설정 화면에서 직접 하거나, Google 계정의 드라이브에서 직접 삭제할 수 있습니다.<br>체험·구매 기록은 Google 계정 설정(타사 앱 및 서비스 연결 해제)에서 이 앱의 연결을 끊으면 함께 삭제됩니다.</p>
+<h2 id="s5">5. 개인정보의 파기 절차 및 방법</h2>
+<div class="tw"><table>
+<tr><th>대상</th><th>파기 시점</th><th>파기 방법</th></tr>
+<tr><td>기기 내 데이터</td><td>이용자의 삭제 요청 시, 앱 삭제 시</td><td>앱 내 삭제 기능 또는 앱 삭제로 기기에서 삭제</td></tr>
+<tr><td>Google 드라이브 백업 파일</td><td>이용자의 삭제 요청 시</td><td>이용자가 Google 드라이브에서 직접 삭제</td></tr>
+<tr><td>체험·구매 기록</td><td>앱 연결 해제 시</td><td>Google 계정 설정(타사 앱 및 서비스 연결 해제)에서 연결 해제</td></tr>
+</table></div>
 
-  <h2>6. 문의</h2>
-  <p>개인정보 관련 문의는 Google Play 스토어 등록 정보에 기재된 개발자 연락처로 보내주시기 바랍니다.</p>
+<h2 id="s6">6. 개인정보의 제3자 제공</h2>
+<p>앱은 개인정보를 제3자에게 제공하지 않습니다. Google 드라이브에 저장되는 정보는 이용자 본인의 Google 계정에만 저장됩니다.</p>
+
+<h2 id="s7">7. 개인정보 처리업무의 위탁</h2>
+<p>앱은 개인정보 처리업무를 위탁하지 않습니다. 인앱 결제는 Google Play가 자체 약관에 따라 처리합니다.</p>
+
+<h2 id="s8">8. 개인정보의 국외 수집 및 이전</h2>
+<p>앱(개발자)은 개인정보를 국외로 직접 수집하거나 이전하지 않습니다. 다만 이용자가 로그인하는 Google 드라이브·Google Play 서비스는 Google이 운영하며, 해당 서버는 국외에 위치할 수 있습니다. 이 저장은 이용자 본인의 Google 계정에 대한 것으로, Google의 개인정보처리방침이 함께 적용됩니다.</p>
+
+<h2 id="s9">9. 개인정보의 안전성 확보조치</h2>
+<div class="tw"><table>
+<tr><th>구분</th><th>조치 내용</th></tr>
+<tr><td>관리적 조치</td><td>개발자가 이용자 데이터를 수집하는 서버를 운영하지 않는 구조 유지, 필요 최소한의 Google 접근 권한(drive.file, drive.appdata)만 사용</td></tr>
+<tr><td>기술적 조치</td><td>PIN을 기기 내 보안 저장소에 암호화하여 저장, 생체인증은 기기 OS 보안 영역에서 처리, Google 인증(OAuth)을 통한 계정 접근</td></tr>
+<tr><td>물리적 조치</td><td>개발자 서버·저장매체에 이용자 개인정보를 보관하지 않음</td></tr>
+</table></div>
+
+<h2 id="s10">10. 자동 수집 장치 및 행태정보</h2>
+<p>앱은 광고 SDK, 분석(Analytics)·크래시 리포팅 SDK를 사용하지 않으며, 쿠키 등 개인정보 자동 수집 장치를 설치·운영하지 않고 제3자가 행태정보를 수집하도록 허용하지 않습니다.</p>
+
+<h2 id="s11">11. 민감정보의 공개 가능성</h2>
+<p>앱은 이용자의 노트 등을 공개하거나 다른 이용자와 공유하는 기능을 제공하지 않으므로 민감정보가 공개되지 않습니다. 이용자가 노트에 직접 입력한 내용은 이용자 기기와 본인 Google 드라이브에만 저장됩니다.</p>
+
+<h2 id="s12">12. 정보주체의 권리·의무 및 행사방법</h2>
+<div class="tw"><table>
+<tr><th>권리</th><th>행사 방법</th></tr>
+<tr><td>열람</td><td>앱 내에서 직접 확인</td></tr>
+<tr><td>정정</td><td>앱 내에서 직접 수정</td></tr>
+<tr><td>삭제</td><td>앱 내 삭제, 앱 삭제, Google 드라이브에서 백업 파일 직접 삭제</td></tr>
+<tr><td>처리정지·동의 철회</td><td>Google 계정 설정에서 앱 연결 해제, 앱 삭제</td></tr>
+<tr><td>그 밖의 요청</td><td>13항의 연락처로 요청. 지체 없이 조치하고 결과를 알립니다.</td></tr>
+</table></div>
+<p>법정대리인은 해당 이용자를 대신하여 위 권리를 행사할 수 있습니다. 이용자는 타인의 개인정보를 노트에 입력할 때 관련 법령을 준수할 책임이 있습니다.</p>
+
+<h2 id="s13">13. 개인정보 보호책임자 및 고충처리</h2>
+<div class="tw"><table>
+<tr><th>구분</th><th>내용</th></tr>
+<tr><td>성명(직위)</td><td>개발자</td></tr>
+<tr><td>이메일</td><td>wordstar801@gmail.com</td></tr>
+<tr><td>처리 기한</td><td>문의 접수 후 10일 이내 회신</td></tr>
+</table></div>
+
+<h2 id="s14">14. 권익침해 구제방법</h2>
+<div class="tw"><table>
+<tr><th>기관</th><th>연락처</th></tr>
+<tr><td>개인정보 분쟁조정위원회</td><td>(국번없이) 1833-6972 · www.kopico.go.kr</td></tr>
+<tr><td>개인정보침해 신고센터</td><td>(국번없이) 118 · privacy.kisa.or.kr</td></tr>
+<tr><td>경찰청</td><td>(국번없이) 182 · ecrm.police.go.kr</td></tr>
+</table></div>
+
+<h2 id="s15">15. 개인정보 처리방침의 변경</h2>
+<p>이 방침은 법령, 정책 또는 앱 기능 변경에 따라 변경될 수 있으며, 변경 시 앱 및 본 페이지를 통해 지속적으로 공개합니다.</p>
+<div class="tw"><table>
+<tr><th>버전</th><th>시행일</th><th>변경 내용</th></tr>
+<tr><td>1.0</td><td>2026. 10. 11.</td><td>최초 제정</td></tr>
+</table></div>
+</main>
 </body>
 </html>
