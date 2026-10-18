@@ -50,7 +50,7 @@ ul{margin:6px 0;padding-left:20px}
 <div class="c"><h3>3. 개인정보 이용 목적</h3><div class="b">올노트는 개인정보를 수집하기 전에 미리 알려드리고, 이용자가 허락한 목적으로만 이용해요.
 <ul><li>노트·할일·일정·기념일 관리</li><li>Google 드라이브 백업·복원</li><li>PIN 잠금</li><li>무료 체험·구매 상태 확인</li></ul></div></div>
 <div class="c"><h3>4. 개인정보 수집</h3><div class="b">올노트는 꼭 필요한 최소한의 개인정보만 처리해요.
-<ul><li>노트·할일·일정·기념일 내용(기기 내 저장)</li><li>PIN(기기 내 저장)</li><li>Google 계정 기본 프로필(이메일, 이름)</li><li>무료 체험 시작일·구매 여부</li></ul></div></div>
+<ul><li>노트·할일·일정·기념일 내용 및 첨부 이미지·파일(기기 내 저장)</li><li>PIN(기기 내 저장)</li><li>Google 계정 기본 프로필(이메일, 이름)</li><li>무료 체험 시작일·구매 여부</li></ul></div></div>
 <div class="c"><h3>5. 개인정보 제공</h3><div class="b">올노트는 개인정보를 다른 기관에 제공하지 않아요. 개발자 서버로 전송하지도 않아요.
 <ul><li>광고 SDK, 분석·크래시 SDK를 사용하지 않아요.</li></ul></div></div>
 <div class="c"><h3>6. 개인정보 보유·이용기간 및 파기</h3><div class="b">보유기간이 지나거나 이용자가 삭제하면 복구할 수 없는 방법으로 파기해요.
@@ -83,7 +83,7 @@ ul{margin:6px 0;padding-left:20px}
 <div class="tw"><table>
 <tr><th>처리 목적</th><th>내용</th></tr>
 <tr><td>핵심 기능 제공</td><td>노트, 할일, 일정, 기념일 관리(기기 내 저장)</td></tr>
-<tr><td>백업 및 복원</td><td>Google 드라이브를 통한 자동 백업·복원(앱 실행 시, 노트·할일·일정·기념일 변경 시 자동 백업)</td></tr>
+<tr><td>백업 및 복원</td><td>Google 드라이브를 통한 자동 백업·복원(앱 실행 시, 노트·할일·일정·기념일 변경 시 자동 백업. 첨부 이미지·파일은 기본적으로 Wi-Fi 연결 시에만 자동 백업, 설정에서 변경 가능)</td></tr>
 <tr><td>잠금 기능</td><td>PIN을 통한 앱 접근 제한</td></tr>
 <tr><td>이용 상태 확인</td><td>무료 체험 기간 및 구매(잠금 해제) 상태의 확인·유지(기기 변경 시 포함)</td></tr>
 </table></div>
@@ -91,7 +91,8 @@ ul{margin:6px 0;padding-left:20px}
 <h2 id="s2">2. 처리하는 개인정보의 항목</h2>
 <div class="tw"><table>
 <tr><th>구분</th><th>항목</th><th>수집 방법</th><th>저장 위치</th><th>개발자 전송</th></tr>
-<tr><td>콘텐츠</td><td>노트·할일·일정·기념일 내용(제목, 본문, 날짜, 첨부파일 등)</td><td>이용자 직접 입력</td><td>이용자 기기 내부, 백업 시 이용자 본인 Google 드라이브(drive.file)</td><td>없음</td></tr>
+<tr><td>콘텐츠</td><td>노트·할일·일정·기념일 내용(제목, 본문, 날짜 등)</td><td>이용자 직접 입력</td><td>이용자 기기 내부, 백업 시 이용자 본인 Google 드라이브(drive.file)</td><td>없음</td></tr>
+<tr><td>첨부 이미지·파일</td><td>노트에 첨부한 이미지·파일</td><td>이용자 직접 첨부</td><td>이용자 기기 내부, 백업 시 이용자 본인 Google 계정의 비공개 앱데이터 폴더(drive.appdata). 기본적으로 Wi-Fi 연결 시에만 백업(설정에서 변경 가능)</td><td>없음</td></tr>
 <tr><td>잠금 정보</td><td>PIN(5회 연속 오류 시 잠김, Google 재로그인으로만 재설정 가능)</td><td>이용자 직접 설정</td><td>기기 내 보안 저장소(암호화)</td><td>없음</td></tr>
 <tr><td>계정 정보(필수)</td><td>Google 계정의 기본 프로필(이메일 주소, 이름)</td><td>Google 로그인</td><td>이용자 기기</td><td>없음</td></tr>
 <tr><td>이용 상태</td><td>무료 체험 시작일, 구매(잠금 해제) 여부</td><td>앱 자동 생성</td><td>이용자 Google 계정의 비공개 앱데이터 폴더(drive.appdata)</td><td>없음</td></tr>
@@ -117,6 +118,7 @@ ul{margin:6px 0;padding-left:20px}
 <tr><th>구분</th><th>보유 기간</th><th>비고</th></tr>
 <tr><td>기기 내 데이터</td><td>이용자가 앱에서 삭제하거나 앱을 삭제할 때까지</td><td>앱 삭제 시 기기 내 데이터 함께 삭제</td></tr>
 <tr><td>Google 드라이브 백업 파일</td><td>이용자가 삭제하거나 드라이브 연결을 해제할 때까지</td><td>개발자는 해당 파일을 수집·열람하지 않음</td></tr>
+<tr><td>첨부 이미지·파일(앱데이터 폴더)</td><td>이용자가 노트에서 삭제하거나 Google 계정의 앱 연결을 해제할 때까지</td><td>개발자는 해당 파일을 수집·열람하지 않음</td></tr>
 <tr><td>체험·구매 기록(앱데이터 폴더)</td><td>이용자가 Google 계정에서 앱 연결을 해제할 때까지</td><td>개발자는 해당 기록을 수집·열람하지 않음</td></tr>
 </table></div>
 
@@ -125,6 +127,7 @@ ul{margin:6px 0;padding-left:20px}
 <tr><th>대상</th><th>파기 시점</th><th>파기 방법</th></tr>
 <tr><td>기기 내 데이터</td><td>이용자의 삭제 요청 시, 앱 삭제 시</td><td>앱 내 삭제 기능 또는 앱 삭제로 기기에서 삭제</td></tr>
 <tr><td>Google 드라이브 백업 파일</td><td>이용자의 삭제 요청 시</td><td>이용자가 Google 드라이브에서 직접 삭제</td></tr>
+<tr><td>첨부 이미지·파일</td><td>노트에서 삭제 시, 앱 연결 해제 시</td><td>앱 내 노트 삭제로 자동 정리, 또는 Google 계정 설정에서 앱 연결 해제</td></tr>
 <tr><td>체험·구매 기록</td><td>앱 연결 해제 시</td><td>Google 계정 설정(타사 앱 및 서비스 연결 해제)에서 연결 해제</td></tr>
 </table></div>
 
