@@ -25,6 +25,16 @@ th{background:var(--head);white-space:nowrap}
 ul{margin:6px 0;padding-left:20px}
 .box{border:2px solid var(--acc);border-radius:8px;padding:12px 16px;margin:18px 0;background:var(--head)}
 .box strong.big{display:block;font-size:17px;color:var(--acc);margin-bottom:6px}
+@media(max-width:560px){
+nav ol{columns:1}
+/* 폰에서는 열이 3개 이상인 표를 항목별 카드로 쌓아서 보여 준다 */
+table.stack,table.stack tbody,table.stack tr,table.stack td{display:block;width:auto}
+table.stack tr:first-child{display:none}
+table.stack tr{border:1px solid var(--line);border-radius:6px;margin:0 0 10px;overflow:hidden}
+table.stack td{border:none;border-bottom:1px solid var(--line);padding:6px 10px}
+table.stack tr td:last-child{border-bottom:none}
+table.stack td::before{content:attr(data-label);display:block;font-size:12px;font-weight:700;color:var(--acc);margin-bottom:2px}
+}
 </style>
 </head>
 <body>
@@ -214,5 +224,16 @@ ul{margin:6px 0;padding-left:20px}
 <tr><td>1.0</td><td>2026. 10. 11. ~ 현재</td><td>최초 제정</td></tr>
 </table></div>
 </main>
+<script>
+document.querySelectorAll('table').forEach(function(t){
+  var rows=t.rows; if(!rows.length) return;
+  var heads=[].map.call(rows[0].cells,function(c){return c.textContent.trim();});
+  if(heads.length<3) return;
+  t.classList.add('stack');
+  for(var i=1;i<rows.length;i++){
+    [].forEach.call(rows[i].cells,function(c,j){ if(heads[j]) c.setAttribute('data-label',heads[j]); });
+  }
+});
+</script>
 </body>
 </html>
